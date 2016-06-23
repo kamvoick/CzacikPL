@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Czacik" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +25,145 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiS-bl-EMG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zaloguj się/ Zarejestruj się" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQT-yv-xLC">
+                                        <rect key="frame" x="20" y="31" width="209" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7AB-GU-5y2"/>
+                                            <constraint firstAttribute="width" constant="209" id="Skb-Ig-sUl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.31764705882352939" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xQT-yv-xLC" firstAttribute="leading" secondItem="iiS-bl-EMG" secondAttribute="leading" constant="20" id="CyA-94-6x8"/>
+                                    <constraint firstAttribute="width" constant="600" id="bYU-PC-bw6"/>
+                                    <constraint firstAttribute="height" constant="124" id="deh-rd-mKz"/>
+                                    <constraint firstItem="xQT-yv-xLC" firstAttribute="top" secondItem="iiS-bl-EMG" secondAttribute="top" constant="31" id="wHg-qT-by7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJj-Lx-rIT" customClass="pierwszyView" customModule="Czacik" customModuleProvider="target">
+                                <rect key="frame" x="20" y="83" width="560" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-Nl-wkY">
+                                        <rect key="frame" x="18" y="18" width="524" height="92"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="facebooklogo" translatesAutoresizingMaskIntoConstraints="NO" id="N0z-pI-2Q8">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="3oT-Li-Nel"/>
+                                                    <constraint firstAttribute="height" constant="92" id="Hxn-8C-BsG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcC-zt-9aY" customClass="przycisk" customModule="Czacik" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="30" width="392" height="33"/>
+                                                <color key="backgroundColor" red="0.28235294117647058" green="0.4392156862745098" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                                <state key="normal" title="Zaloguj się">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fbPrzycisk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcy-SZ-ae4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="AD3-Nl-wkY" secondAttribute="trailing" constant="10" id="0Oy-Ta-f6k"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="AD3-Nl-wkY" secondAttribute="bottom" constant="10" id="NFh-cJ-L9G"/>
+                                    <constraint firstItem="AD3-Nl-wkY" firstAttribute="leading" secondItem="AJj-Lx-rIT" secondAttribute="leadingMargin" constant="10" id="tr9-xL-CJF"/>
+                                    <constraint firstItem="AD3-Nl-wkY" firstAttribute="top" secondItem="AJj-Lx-rIT" secondAttribute="topMargin" constant="10" id="wRI-uP-iCT"/>
+                                    <constraint firstAttribute="height" constant="128" id="zsP-hw-0bM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRU-i5-L34" customClass="pierwszyView" customModule="Czacik" customModuleProvider="target">
+                                <rect key="frame" x="20" y="236" width="560" height="344"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email login / Zarejestruj się" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yw-ZP-P0s">
+                                        <rect key="frame" x="20" y="10" width="216" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="BZm-GI-mqP"/>
+                                            <constraint firstAttribute="width" constant="216" id="Wnb-B7-oc9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Re-NE-zou" customClass="textField" customModule="Czacik" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="63" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.91638032616892906" green="0.91638032616892906" blue="0.91638032616892906" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LCO-VZ-5ta"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsL-1o-OtK" customClass="textField" customModule="Czacik" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="118" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.91638032619999998" green="0.91638032619999998" blue="0.91638032619999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ZuC-9t-VXa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByI-8k-Rvd" customClass="przycisk" customModule="Czacik" customModuleProvider="target">
+                                        <rect key="frame" x="165" y="203" width="230" height="33"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="awU-3p-thd"/>
+                                            <constraint firstAttribute="width" constant="230" id="htm-9e-3JJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Zaloguj się / Zarejestruj się">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3Re-NE-zou" firstAttribute="top" secondItem="8Yw-ZP-P0s" secondAttribute="bottom" constant="8" id="L7h-kI-ayM"/>
+                                    <constraint firstItem="8Yw-ZP-P0s" firstAttribute="leading" secondItem="CRU-i5-L34" secondAttribute="leading" constant="20" id="Qc3-0s-9ZO"/>
+                                    <constraint firstItem="ByI-8k-Rvd" firstAttribute="centerX" secondItem="CRU-i5-L34" secondAttribute="centerX" id="UnG-ra-gcs"/>
+                                    <constraint firstAttribute="trailing" secondItem="tsL-1o-OtK" secondAttribute="trailing" constant="20" id="V3U-Fm-YMr"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Re-NE-zou" secondAttribute="trailing" constant="20" id="VOV-hi-VXx"/>
+                                    <constraint firstItem="tsL-1o-OtK" firstAttribute="leading" secondItem="CRU-i5-L34" secondAttribute="leading" constant="20" id="cwN-0J-PKv"/>
+                                    <constraint firstItem="tsL-1o-OtK" firstAttribute="top" secondItem="3Re-NE-zou" secondAttribute="bottom" constant="20" id="eIh-Ta-Vdj"/>
+                                    <constraint firstItem="8Yw-ZP-P0s" firstAttribute="top" secondItem="CRU-i5-L34" secondAttribute="top" constant="10" id="fUl-Y8-qvA"/>
+                                    <constraint firstItem="3Re-NE-zou" firstAttribute="leading" secondItem="CRU-i5-L34" secondAttribute="leading" constant="20" id="zPK-8E-fCp"/>
+                                    <constraint firstItem="ByI-8k-Rvd" firstAttribute="top" secondItem="tsL-1o-OtK" secondAttribute="bottom" constant="50" id="zjF-g1-AcG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.92465394295302017" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iiS-bl-EMG" secondAttribute="trailing" id="8q8-IK-Jwy"/>
+                            <constraint firstItem="iiS-bl-EMG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9TW-bi-EOA"/>
+                            <constraint firstItem="iiS-bl-EMG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E77-Md-qW9"/>
+                            <constraint firstItem="CRU-i5-L34" firstAttribute="leading" secondItem="AJj-Lx-rIT" secondAttribute="leading" id="J1i-ZL-ZTK"/>
+                            <constraint firstItem="AJj-Lx-rIT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="NbR-XR-Wft"/>
+                            <constraint firstAttribute="bottom" secondItem="CRU-i5-L34" secondAttribute="bottom" constant="20" symbolic="YES" id="a3m-18-Xen"/>
+                            <constraint firstItem="CRU-i5-L34" firstAttribute="top" secondItem="AJj-Lx-rIT" secondAttribute="bottom" constant="25" id="gHL-0J-xWX"/>
+                            <constraint firstItem="AJj-Lx-rIT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jh7-Rz-vUo"/>
+                            <constraint firstItem="AJj-Lx-rIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mxy-GZ-czV"/>
+                            <constraint firstItem="CRU-i5-L34" firstAttribute="trailing" secondItem="AJj-Lx-rIT" secondAttribute="trailing" id="wnt-We-z98"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebooklogo" width="1394" height="1400"/>
+    </resources>
 </document>

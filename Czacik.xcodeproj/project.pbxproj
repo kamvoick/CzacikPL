@@ -12,6 +12,18 @@
 		421989871D1C4BF600DEC97A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421989851D1C4BF600DEC97A /* Main.storyboard */; };
 		421989891D1C4BF600DEC97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421989881D1C4BF600DEC97A /* Assets.xcassets */; };
 		4219898C1D1C4BF600DEC97A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4219898A1D1C4BF600DEC97A /* LaunchScreen.storyboard */; };
+		421989991D1C4C3300DEC97A /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421989951D1C4C3300DEC97A /* NotoSans-Bold.ttf */; };
+		4219899A1D1C4C3300DEC97A /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421989961D1C4C3300DEC97A /* NotoSans-BoldItalic.ttf */; };
+		4219899B1D1C4C3300DEC97A /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421989971D1C4C3300DEC97A /* NotoSans-Italic.ttf */; };
+		4219899C1D1C4C3300DEC97A /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421989981D1C4C3300DEC97A /* NotoSans-Regular.ttf */; };
+		4219899F1D1C4EB800DEC97A /* pierwszyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219899E1D1C4EB800DEC97A /* pierwszyView.swift */; };
+		421989A41D1C4F5400DEC97A /* stałe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421989A31D1C4F5400DEC97A /* stałe.swift */; };
+		421989A61D1C55BB00DEC97A /* przycisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421989A51D1C55BB00DEC97A /* przycisk.swift */; };
+		421989A81D1C58FF00DEC97A /* textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421989A71D1C58FF00DEC97A /* textField.swift */; };
+		421989AD1D1C64F600DEC97A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421989AA1D1C64F600DEC97A /* Bolts.framework */; };
+		421989AE1D1C64F700DEC97A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421989AB1D1C64F600DEC97A /* FBSDKCoreKit.framework */; };
+		421989AF1D1C64F700DEC97A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421989AC1D1C64F600DEC97A /* FBSDKLoginKit.framework */; };
+		8D9CBA0995AB6B33868A3DC8 /* Pods_Czacik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D950CD33AC694F3CFCDF163 /* Pods_Czacik.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +34,20 @@
 		421989881D1C4BF600DEC97A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4219898B1D1C4BF600DEC97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4219898D1D1C4BF600DEC97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421989951D1C4C3300DEC97A /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		421989961D1C4C3300DEC97A /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		421989971D1C4C3300DEC97A /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		421989981D1C4C3300DEC97A /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		4219899E1D1C4EB800DEC97A /* pierwszyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pierwszyView.swift; sourceTree = "<group>"; };
+		421989A31D1C4F5400DEC97A /* stałe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "stałe.swift"; sourceTree = "<group>"; };
+		421989A51D1C55BB00DEC97A /* przycisk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = przycisk.swift; sourceTree = "<group>"; };
+		421989A71D1C58FF00DEC97A /* textField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
+		421989AA1D1C64F600DEC97A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		421989AB1D1C64F600DEC97A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		421989AC1D1C64F600DEC97A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		61C4FE25E96778C03FC9038A /* Pods-Czacik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Czacik.release.xcconfig"; path = "Pods/Target Support Files/Pods-Czacik/Pods-Czacik.release.xcconfig"; sourceTree = "<group>"; };
+		7D950CD33AC694F3CFCDF163 /* Pods_Czacik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Czacik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD375E30501BD886E34B74D8 /* Pods-Czacik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Czacik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Czacik/Pods-Czacik.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421989AD1D1C64F600DEC97A /* Bolts.framework in Frameworks */,
+				421989AE1D1C64F700DEC97A /* FBSDKCoreKit.framework in Frameworks */,
+				421989AF1D1C64F700DEC97A /* FBSDKLoginKit.framework in Frameworks */,
+				8D9CBA0995AB6B33868A3DC8 /* Pods_Czacik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +70,8 @@
 			children = (
 				421989801D1C4BF600DEC97A /* Czacik */,
 				4219897F1D1C4BF600DEC97A /* Products */,
+				7E1A3F2FB16F53C3239779CD /* Pods */,
+				4C67DFCE978B85E70DFE79CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +86,11 @@
 		421989801D1C4BF600DEC97A /* Czacik */ = {
 			isa = PBXGroup;
 			children = (
+				421989A91D1C64C300DEC97A /* frameworki */,
+				421989A01D1C4F2900DEC97A /* Przydatne */,
+				4219899D1D1C4E8700DEC97A /* View */,
+				421989941D1C4C1D00DEC97A /* Zasoby */,
+				421989931D1C4C1400DEC97A /* Controller */,
 				421989811D1C4BF600DEC97A /* AppDelegate.swift */,
 				421989831D1C4BF600DEC97A /* ViewController.swift */,
 				421989851D1C4BF600DEC97A /* Main.storyboard */,
@@ -64,6 +101,69 @@
 			path = Czacik;
 			sourceTree = "<group>";
 		};
+		421989931D1C4C1400DEC97A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		421989941D1C4C1D00DEC97A /* Zasoby */ = {
+			isa = PBXGroup;
+			children = (
+				421989951D1C4C3300DEC97A /* NotoSans-Bold.ttf */,
+				421989961D1C4C3300DEC97A /* NotoSans-BoldItalic.ttf */,
+				421989971D1C4C3300DEC97A /* NotoSans-Italic.ttf */,
+				421989981D1C4C3300DEC97A /* NotoSans-Regular.ttf */,
+			);
+			name = Zasoby;
+			sourceTree = "<group>";
+		};
+		4219899D1D1C4E8700DEC97A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				421989A51D1C55BB00DEC97A /* przycisk.swift */,
+				4219899E1D1C4EB800DEC97A /* pierwszyView.swift */,
+				421989A71D1C58FF00DEC97A /* textField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		421989A01D1C4F2900DEC97A /* Przydatne */ = {
+			isa = PBXGroup;
+			children = (
+				421989A31D1C4F5400DEC97A /* stałe.swift */,
+			);
+			name = Przydatne;
+			sourceTree = "<group>";
+		};
+		421989A91D1C64C300DEC97A /* frameworki */ = {
+			isa = PBXGroup;
+			children = (
+				421989AA1D1C64F600DEC97A /* Bolts.framework */,
+				421989AB1D1C64F600DEC97A /* FBSDKCoreKit.framework */,
+				421989AC1D1C64F600DEC97A /* FBSDKLoginKit.framework */,
+			);
+			name = frameworki;
+			sourceTree = "<group>";
+		};
+		4C67DFCE978B85E70DFE79CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D950CD33AC694F3CFCDF163 /* Pods_Czacik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E1A3F2FB16F53C3239779CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD375E30501BD886E34B74D8 /* Pods-Czacik.debug.xcconfig */,
+				61C4FE25E96778C03FC9038A /* Pods-Czacik.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421989901D1C4BF600DEC97A /* Build configuration list for PBXNativeTarget "Czacik" */;
 			buildPhases = (
+				ECEBF2AF3ADF761501F1922B /* [CP] Check Pods Manifest.lock */,
 				4219897A1D1C4BF500DEC97A /* Sources */,
 				4219897B1D1C4BF500DEC97A /* Frameworks */,
 				4219897C1D1C4BF500DEC97A /* Resources */,
+				7CFF1F8E339EE7FF3CF53EF7 /* [CP] Embed Pods Frameworks */,
+				40C768F6B07278A3B85C9BA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,21 +225,77 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421989991D1C4C3300DEC97A /* NotoSans-Bold.ttf in Resources */,
 				4219898C1D1C4BF600DEC97A /* LaunchScreen.storyboard in Resources */,
+				4219899A1D1C4C3300DEC97A /* NotoSans-BoldItalic.ttf in Resources */,
+				4219899B1D1C4C3300DEC97A /* NotoSans-Italic.ttf in Resources */,
 				421989891D1C4BF600DEC97A /* Assets.xcassets in Resources */,
 				421989871D1C4BF600DEC97A /* Main.storyboard in Resources */,
+				4219899C1D1C4C3300DEC97A /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40C768F6B07278A3B85C9BA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Czacik/Pods-Czacik-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CFF1F8E339EE7FF3CF53EF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Czacik/Pods-Czacik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECEBF2AF3ADF761501F1922B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4219897A1D1C4BF500DEC97A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4219899F1D1C4EB800DEC97A /* pierwszyView.swift in Sources */,
+				421989A41D1C4F5400DEC97A /* stałe.swift in Sources */,
 				421989841D1C4BF600DEC97A /* ViewController.swift in Sources */,
+				421989A81D1C58FF00DEC97A /* textField.swift in Sources */,
 				421989821D1C4BF600DEC97A /* AppDelegate.swift in Sources */,
+				421989A61D1C55BB00DEC97A /* przycisk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +408,14 @@
 		};
 		421989911D1C4BF600DEC97A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD375E30501BD886E34B74D8 /* Pods-Czacik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Czacik",
+				);
 				INFOPLIST_FILE = Czacik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.Czacik;
@@ -260,8 +425,14 @@
 		};
 		421989921D1C4BF600DEC97A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C4FE25E96778C03FC9038A /* Pods-Czacik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Czacik",
+				);
 				INFOPLIST_FILE = Czacik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.Czacik;
@@ -288,6 +459,7 @@
 				421989921D1C4BF600DEC97A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
