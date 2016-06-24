@@ -23,6 +23,7 @@
 		421989AD1D1C64F600DEC97A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421989AA1D1C64F600DEC97A /* Bolts.framework */; };
 		421989AE1D1C64F700DEC97A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421989AB1D1C64F600DEC97A /* FBSDKCoreKit.framework */; };
 		421989AF1D1C64F700DEC97A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421989AC1D1C64F600DEC97A /* FBSDKLoginKit.framework */; };
+		421989B11D1C72D600DEC97A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421989B01D1C72D600DEC97A /* DataService.swift */; };
 		8D9CBA0995AB6B33868A3DC8 /* Pods_Czacik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D950CD33AC694F3CFCDF163 /* Pods_Czacik.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		421989AA1D1C64F600DEC97A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		421989AB1D1C64F600DEC97A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		421989AC1D1C64F600DEC97A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		421989B01D1C72D600DEC97A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		61C4FE25E96778C03FC9038A /* Pods-Czacik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Czacik.release.xcconfig"; path = "Pods/Target Support Files/Pods-Czacik/Pods-Czacik.release.xcconfig"; sourceTree = "<group>"; };
 		7D950CD33AC694F3CFCDF163 /* Pods_Czacik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Czacik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD375E30501BD886E34B74D8 /* Pods-Czacik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Czacik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Czacik/Pods-Czacik.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		421989801D1C4BF600DEC97A /* Czacik */ = {
 			isa = PBXGroup;
 			children = (
+				421989B21D1C72DE00DEC97A /* Narzędzia */,
 				421989A91D1C64C300DEC97A /* frameworki */,
 				421989A01D1C4F2900DEC97A /* Przydatne */,
 				4219899D1D1C4E8700DEC97A /* View */,
@@ -145,6 +148,14 @@
 				421989AC1D1C64F600DEC97A /* FBSDKLoginKit.framework */,
 			);
 			name = frameworki;
+			sourceTree = "<group>";
+		};
+		421989B21D1C72DE00DEC97A /* Narzędzia */ = {
+			isa = PBXGroup;
+			children = (
+				421989B01D1C72D600DEC97A /* DataService.swift */,
+			);
+			name = "Narzędzia";
 			sourceTree = "<group>";
 		};
 		4C67DFCE978B85E70DFE79CD /* Frameworks */ = {
@@ -291,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4219899F1D1C4EB800DEC97A /* pierwszyView.swift in Sources */,
+				421989B11D1C72D600DEC97A /* DataService.swift in Sources */,
 				421989A41D1C4F5400DEC97A /* stałe.swift in Sources */,
 				421989841D1C4BF600DEC97A /* ViewController.swift in Sources */,
 				421989A81D1C58FF00DEC97A /* textField.swift in Sources */,
@@ -411,7 +423,7 @@
 			baseConfigurationReference = FD375E30501BD886E34B74D8 /* Pods-Czacik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Czacik",
@@ -428,7 +440,7 @@
 			baseConfigurationReference = 61C4FE25E96778C03FC9038A /* Pods-Czacik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Czacik",

@@ -9,9 +9,12 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,16 +28,27 @@ class ViewController: UIViewController {
     @IBAction func fbPrzycisk(sender: UIButton!){
         let facebookLogin = FBSDKLoginManager()
         
-        facebookLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookErr: NSError!) in
-            
-            if facebookErr != nil{
-                print("Logowanie do facebooka nie powiodło się. Błąd: \(facebookErr)")
-            }else{
-                let tokenDostępu = FBSDKAccessToken.currentAccessToken().tokenString //jeżeli się zalogujemy to dostaniemy token od fb
-                print("zalogowano się do fb. \(tokenDostępu)")
+        facebookLogin.logInWithReadPermissions(["public_profile", "email"], fromViewController: self, handler: {
+            (facebookResult, facebookError) -> Void in
+            if facebookError != nil {
+                print("Facebook login failed. Error \(facebookError)")
+            } else if facebookResult.isCancelled {
+                print("Facebook login was cancelled.")
+            } else {
+                // your firebase authentication stuff..
+                
+                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+                
+                FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
+                    if error != nil {
+                        print("Login failed. \(error)")
+                    } else {
+                        print("Logged in!")
+                        
+                    }
+                }
             }
-        }
+        })
     }
-
 }
 
