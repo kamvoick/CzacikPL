@@ -35,16 +35,17 @@ class ViewController: UIViewController {
             } else if facebookResult.isCancelled {
                 print("Facebook login was cancelled.")
             } else {
-                // your firebase authentication stuff..
+                // firebase auth..
                 
                 let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
                 
                 FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
                     if error != nil {
-                        print("Login failed. \(error)")
+                        print("Logowanie do Firebase nie powiodło się. \(error)")
                     } else {
-                        print("Logged in!")
-                        
+                        print("Zalogowany w Firebase!")
+                        NSUserDefaults.standardUserDefaults().setValue(credential, forKey: "credential")
+                        self.performSegueWithIdentifier("zalogowany", sender: nil)
                     }
                 }
             }
