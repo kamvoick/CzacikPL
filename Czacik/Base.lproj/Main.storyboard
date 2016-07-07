@@ -61,7 +61,7 @@
                                                     <constraint firstAttribute="height" constant="92" id="Hxn-8C-BsG"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcC-zt-9aY" customClass="przycisk" customModule="Czacik" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcC-zt-9aY" customClass="przycisk" customModule="Czacik" customModuleProvider="target">
                                                 <rect key="frame" x="132" y="30" width="392" height="33"/>
                                                 <color key="backgroundColor" red="0.28235294117647058" green="0.4392156862745098" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
@@ -126,6 +126,9 @@
                                         <state key="normal" title="Zaloguj się / Zarejestruj się">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logowanie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6iD-dS-3MQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,10 +160,33 @@
                             <constraint firstItem="CRU-i5-L34" firstAttribute="trailing" secondItem="AJj-Lx-rIT" secondAttribute="trailing" id="wnt-We-z98"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="poleEmailLogin" destination="3Re-NE-zou" id="rGR-Cd-Y7l"/>
+                        <outlet property="polePassword" destination="tsL-1o-OtK" id="K5V-c6-0Zn"/>
+                        <segue destination="pmK-rp-yhr" kind="show" identifier="zalogowany" id="uAf-T0-rQK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z14-2N-cUy">
+            <objects>
+                <viewController id="pmK-rp-yhr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ffv-hi-9Jt"/>
+                        <viewControllerLayoutGuide type="bottom" id="qSz-vk-HlR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sPp-ii-aYh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.42520195860423826" green="0.8228271257343831" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLZ-gX-HUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="337"/>
         </scene>
     </scenes>
     <resources>

@@ -13,5 +13,5 @@ let kolorCienia: CGFloat = 157.0 / 255.0
 let KEY_UID = "uid"
 
 //segue
-let SEGUE_LOGGED_IN = "zalogowany"
+let SEGUE_ZALOGOWANY = "zalogowany"
 

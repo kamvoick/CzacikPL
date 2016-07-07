@@ -14,10 +14,16 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var poleEmailLogin: textField!
+    @IBOutlet weak var polePassword: textField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        //logowanie z pamięci
+        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            self.performSegueWithIdentifier(SEGUE_ZALOGOWANY, sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +34,7 @@ class ViewController: UIViewController {
     @IBAction func fbPrzycisk(sender: UIButton!){
         let facebookLogin = FBSDKLoginManager()
         
-        facebookLogin.logInWithReadPermissions(["public_profile", "email"], fromViewController: self, handler: {
+        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self, handler: {
             (facebookResult, facebookError) -> Void in
             if facebookError != nil {
                 print("Facebook login failed. Error \(facebookError)")
@@ -39,17 +45,47 @@ class ViewController: UIViewController {
                 
                 let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
                 
-                FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
+                FIRAuth.auth()?.signInWithCredential(credential, completion: { (authData: FIRUser?, error: NSError?) in
                     if error != nil {
                         print("Logowanie do Firebase nie powiodło się. \(error)")
                     } else {
                         print("Zalogowany w Firebase!")
-                        NSUserDefaults.standardUserDefaults().setValue(credential, forKey: "credential")
-                        self.performSegueWithIdentifier("zalogowany", sender: nil)
+                        
+                        let user: [String: String] = ["provider": credential.provider, "blah": "test"]
+                        
+                        DataService.ds.createFirebaseUser(authData!.uid, user: user)
+                        
+                        NSUserDefaults.standardUserDefaults().setValue(authData?.uid, forKey: KEY_UID)
+                        self.performSegueWithIdentifier(SEGUE_ZALOGOWANY, sender: nil)
                     }
-                }
+                })
             }
         })
     }
+    
+    @IBAction func logowanie(sender: AnyObject) {
+        if let email = poleEmailLogin.text where email != "", let password = polePassword.text where password != "" {
+            
+            FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: { (user: FIRUser?, error: NSError?) in
+                
+                if error != nil {
+                    print("Jest już takie konto użytkownika)")
+//                    self.login()
+                } else {
+                    print("Konto użytkownika stworzone")
+//                    self.login()
+                }
+            })
+            
+        }else{
+            let alert = UIAlertController(title: "Wpisz login i hasło", message: nil, preferredStyle: .Alert)
+            let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+            alert.addAction(action)
+            presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
 }
 
