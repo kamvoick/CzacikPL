@@ -17,7 +17,7 @@ class DataService {
     static let ds = DataService()
     
     // Static variable means there's only one instance of it in memory
-    // Here we're creating a static variable and make is globally accessible
+    // static let ds oznacza że jest zewnątrzdostępna
     
     private var _REF_BASE = FIRDatabase.database().reference()
     private var _REF_POSTS = FIRDatabase.database().referenceFromURL("\(URL)/posts")
@@ -36,8 +36,8 @@ class DataService {
     }
     
     func createFirebaseUser(uid: String, user: Dictionary<String, String>) {
-        //Here is gets the uid from a specific user
-        //However if there isn't a uid it will create one
+        //pobiera uid od konkretnego użytkonika
+        //jeżeli nie ma tworzy nowe
         
         REF_USERS.child(uid).setValue(user)
     }
